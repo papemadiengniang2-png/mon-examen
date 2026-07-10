@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Inscription</title>
+</head>
+
+<body class="bg-blue-900">
+    <header>
+        <div class="bg-white h-[30px] w-full text-blue-900 flex px-20">
+            <div class="flex w-[300px] justify-center items-center gap-2">
+                <div class="w-[20px] h-[20px] bg-blue-300 rounded-12">
+                    <img src="logo-IIBS-Bleu.jfif" alt="" class="w-full h-full rounded-12">
+                </div>
+                <div class="">IIBS Events</div>
+            </div>
+            <div class="flex justify-between ml-[70px]">
+                <ul class="flex gap-12">
+                    <a href="acceuil.html"><li>Accueil</li></a>
+                    <a href="agenda.html"><li>Agenda</li></a>
+                    <a href="actu.html"><li>Actualites</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+                <button
+                    class="bg-blue-400 rounded-16 text-white h-[25px] ml-[200px] px-2 rounded-[8px]">S'inscrire</button>
+            </div>
+        </div>
+    </header>
+    <section class="px-36 p-4">
+        <div class="px-4 p-2 bg-blue-100 rounded-[12px]">
+            <div>
+                <h2 class="text-blue-500 font-bold">INSCRIPTION</h2>
+                <h1 class="text-blue-900 text-[30px] font-bold">Reservez votre place</h1>
+                <div class="flex justify-between">
+                    <div>
+                        <label for="" class="px-2">Prenom</label><br>
+                        <input type="text" placeholder="Votre prenom" class="bg-white text-blue-800 p-2 rounded-[12px] ">
+                    </div>
+                    <div>
+                        <label for="">Nom</label><br>
+                        <input type="text" placeholder="Votre nom" class="bg-white text-blue-800 p-2 rounded-[12px] ">
+                    </div>
+
+                </div><br>
+                <div>
+                    <label for="" class="px-2">Adresse e-mail</label><br>
+                    <input type="email" placeholder="Votre adresse mail" class="bg-white text-blue-800 p-2 rounded-[12px] w-full">
+                </div><br>
+                <div>
+                    <label for="" class="px-2">Telephone</label><br>
+                    <input type="tel" placeholder="Votre numero de telephone" class="bg-white text-blue-800 p-2 rounded-[12px] w-full">
+                </div><br>
+                <div>
+                    <label for="" class="px-2">Statut</label><br>
+                    <input type="text" placeholder="Votre Statut" class="bg-white text-blue-800 p-2 rounded-[12px] w-full">
+                </div><br>
+                <div>
+                    <label for="" class="px-2">Evenement choisi</label><br>
+                    <input type="email" placeholder="Evenement" class="bg-white text-blue-800 p-2 rounded-[12px] w-full">
+                </div><br>
+                <div >
+                    <label for="" class="flex gap-3">
+                        <input type="checkbox"><p>J'accepte que mes données soient utilisées pour la gestion de mon inscription</p>
+                        
+                    </label><br>
+                    
+                    
+                </div>
+                <button
+                    class="bg-blue-900 rounded-16 text-white font-bold p-2 rounded-[8px]">confirmer mon inscription</button>
+            </div><br>
+            <div class="bg-white  p-4 text-center rounded-[12px]">
+                <div class="bg-green-200 text-green-500 h-[50px] w-[50px] rounded-[50%] text-center ml-[47%] flex justify-center"><i class="fa-solid fa-check"></i></div>
+                <div class="font-bold text-blue-900">Inscription Confirmée</div>
+                <div>Un e-mail de confirmation vient de vous être envoyé pour la Conférence IA & métiers.</div>
+                <a href="agenda.html"><button class="bg-blue-900 rounded-16 text-white font-bold p-2 rounded-[8px]">Retour a l'agenda</button></a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="lg:grid grid-cols-4 px-36 p-4 mt-2 gap-2 text-blue-500 bg-blue-800">
+            <div class="lg : bg-white p-2 rounded-[12px]">
+                <h2 class="lg: font-bold">🐱‍💻IIBS Evens</h2>
+                <p>La plateforme des événements de l'Institut Informatique Business School.</p>
+            </div>
+            <div class="bg-white p-2 rounded-[12px]">
+                <h2 class="font-bold">Navigation</h2>
+                <p>Accueil <br>
+                    Agenda <br>
+                    Actualités
+                </p>
+            </div>
+            <div class="bg-white p-2 rounded-[12px]">
+                <h2 class="font-bold">Contact</h2>
+                <p>
+                    <i class="fa-regular fa-envelope"></i>contact@iibs.edu <br>
+                    <i class="fa-solid fa-phone"></i>+221 33 000 00 00 <br>
+                    <i class="fa-solid fa-magnifying-glass"></i>Dakar, Sénégal
+                </p>
+            </div>
+            <div class="bg-white p-2 rounded-[12px]">
+                <h2 class="font-bold">Suivez nous</h2>
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </p>
+            </div>
+        </div>
+        <div class="ml-[35%]">
+            <hr class="text-white w-1/2 text-center ">
+        </div>
+        <footer class="text-center bg-blue-800 text-white">@2026 Events.Institut Informatique</footer>
+    </section>
+</body>
+
+</html>
