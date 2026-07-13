@@ -5,94 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>agenda</title>
 </head>
 
 <body class="bg-blue-900">
     <header>
-        <div class="bg-white h-[30px] w-full text-blue-900 flex px-20">
-            <div class="flex w-[300px] justify-center items-center gap-2">
-                <div class="w-[20px] h-[20px] bg-blue-300 rounded-12">
-                    <img src="logo-IIBS-Bleu.jfif" alt="" class="w-full h-full rounded-12">
+        <div class="lg:fixed lg:top-0 lg:left-0 lg:w-full lg:text-white lg:p-2 lg:flex lg:justify-arround lg:z-50  lg:backdrop-blur md:fixed md:top-0 md:left-0 md:w-full md:text-white md:p-2 md:flex md:justify-center md:z-50  md:backdrop-blur fixed top-0 left-0 w-full text-white p-2 grid grid-cols-1 z-50  backdrop-blur">
+            <div class="lg:flex lg:justify-center lg:px-36 md:flex md:justify-center  flex justify-center gap-2 px-20 items-center">
+                <div class="w-[40px] h-[40px] rounded-[12px] bg-blue-300 rounded-12">
+                    <img src="logo-IIBS-Bleu.jfif" alt="" class="w-full h-full rounded-[12px]">
                 </div>
                 <div class="">IIBS Events</div>
             </div>
-            <div class="flex justify-between ml-[70px]">
-                <ul class="flex gap-12">
-                    <a href="acceuil.html"><li>Accueil</li></a>
-                    <a href="agenda.html"><li>Agenda</li></a>
-                    <a href="actu.html"><li>Actualites</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
+            <div>
+                <ul class="lg:fex lg:justify-arround lg:gap-4 lg:mr-12 lg:w-[1/2] lg:iems-center  md:flex md:justify-arround md:mr-12 md:gap-8 md:items-center  flex justify-arround items-center gap-2 px-10 mr-12 text-center">
+                    <a href="index.html">
+                        <li>Accueil</li>
+                    </a>
+                    <a href="agenda.html">
+                        <li>Agenda</li>
+                    </a>
+                    <a href="actu.html">
+                        <li>Actualites</li>
+                    
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    
+                        
+                    <a href="inscription.html">
+                        <li><button class="lg:bg-blue-300 lg:text-white   lg:p-2 lg:rounded-[8px] md:bg-blue-300 md:text-white   md:px-2 md:rounded-[8px] bg-blue-300 rounded-[8px] text-white px-2">S'inscrire</button></li>
+                    </a>
+                    
                 </ul>
-                <button
-                    class="bg-blue-400 rounded-16 text-white h-[25px] ml-[200px] px-2 rounded-[8px]">S'inscrire</button>
+                
             </div>
         </div>
     </header>
-    <section class="px-36">
-        <div class="text-white">
-            <H1 class="text-3xl text-blue-300 font-bold">Agenda des événements</H1>
-            <p class="font-bold text-white">Trouvez l'événement qui vous correspond parmi nos 6 prochains rendez-vous.</p>
-            <div class="gap-0 flex justify-between">
-                <input type="text" placeholder="rechercher un événement" class="bg-white text-blue-900 px-4 rounded-[12px]">
-                <button class="bg-blue-700 rounded-16 text-white h-[25px] px-2 rounded-[8px]">Toutes Categorie</button>
-                <button class="bg-blue-400 rounded-16 text-white h-[25px] px-2 rounded-[8px]">Conference</button>
-                <button class="bg-green-400 rounded-16 text-white h-[25px] px-2 rounded-[8px]">Atelier</button>
+
+    
+    <section class="lg:px-30 lg:mt-20 md:px-20 md:px-10 mt-28 px-10 py-2">
+        <div class=" justify-between px-4 rounded-[12px] py-8 bg-[url('./IIBS-Evens.png')] bg-cover bg-center bg-no-repeat p-2">
+            <div class="text-white">
+            <H1 class="text-4xl text-blue-200 font-bold">Agenda des événements</H1>
+            <p class="font-bold text-white">Trouvez l'événement qui vous correspond parmi nos 6 prochains rendez-vous.
+            </p>
+            <div class="lg:gap-0 lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-3 md:gap-4  grid grid-cols-1 gap-2 ">
+                <input type="text" placeholder="rechercher un événement"
+                    class="bg-white text-blue-900 px-4 rounded-[12px]">
+                <button class="bg-blue-700 rounded-16 text-white  px-4 py-2 rounded-[8px] mt-2 w-full">Toutes Categorie</button>
+                <a href="detail.html">
+                    <button class="bg-blue-400 rounded-16 text-white  px-4 py-2 rounded-[8px] mt-2 w-full">Conference</button>
+                </a>
+                <a href="carriere.html">
+                    <button class="bg-purple-400 rounded-16 text-white  px-4 py-2 rounded-[8px] mt-2 w-full">Carriere</button>
+                </a>
+                <a href="atelier.html">
+                    <button class="bg-green-400 rounded-16 text-white  px-4 py-2 rounded-[8px] mt-2 w-full">Atelier</button>
+                </a>
+                <a href="competition.html">
+                    <button class="bg-red-700 rounded-16 text-white  px-4 py-2 rounded-[8px] mt-2 w-full">Competition</button>   
+                </a>
+                <a href="vie-de-campus.html">
+                    <button class="bg-blue-900 rounded-16 text-white  px-4 py-2 rounded-[8px] mt-2 w-full">Vie de Campus</button>
+                </a>
+                <a href="porte.html">
+                    <button class="bg-yellow-600 rounded-16 text-white  px-4 py-2 rounded-[8px] mt-2 w-full">Portes Ouvertes</button>
+                </a>
             </div>
-            <div class="mt-2 flex justify-between">
-                <div class="flex gap-8">
-                    <button class="bg-red-700 rounded-16 text-white h-[25px] px-2 rounded-[8px]">Competition</button>
-                    <button class="bg-purple-400 rounded-16 text-white h-[25px] px-2 rounded-[8px]">Carriere</button>
-                </div>
+            
+                
                 <div>
                     Juillet 2026🔥
                 </div>
-            </div>
 
+            
+
+            </div>
         </div>
-        <div class="grid grid-cols-3 gap-4 mt-4">
-            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110">
+        <div
+            class="lg:grid lg:grid-cols-3 lg:gap-4 lg:mt-4 md:grid md:grid-cols-2 md:gap-2 md:mt-2 grid grid-cols-1 gap-2 mt-2 ">
+            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110 w-full px-2">
                 <div class="h-[140px]"><img src="image-1.jfif" alt="" class="h-full w-full rounded-[6px]"></div>
-                <button class="bg-red-500 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Competition</button>
+                <a href="competition.html">
+                    <button class="bg-red-500 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Competition</button>
+                </a>
                 <H1 class="mt-2">Hackathon IIBS 2026</H1>
                 <div class="mt-2">28 mars-Campus</div>
             </div>
-            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110">
+            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110 w-full px-2">
                 <div class="h-[140px]"><img src="conference-en-IA.png" alt="" class="h-full w-full rounded-[6px]"></div>
-                <a href="detail.html"><button class="bg-blue-500 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Conference</button></a>
+                <a href="detail.html"><button
+                        class="bg-blue-500 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Conference</button></a>
                 <H1 class="mt-2">IA & metiers</H1>
                 <div class="mt-2">15 mars-Amphi A</div>
             </div>
-            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110">
+            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110 w-full px-2">
                 <div class="h-[140px]"><img src="atelier.png" alt="" class="h-full w-full rounded-[6px]"></div>
-                <button class="bg-green-700 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Atelier</button>
+                <a href="atelier.html">
+                    <button class="bg-green-700 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Atelier</button>
+                </a>
                 <H1 class="mt-2">Git & Github</H1>
                 <div class="mt-2">20 mars-Salle B12</div>
             </div>
-            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110">
+            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110 w-full px-2">
                 <div class="h-[140px]"><img src="portes-ouvertes.png" alt="" class="h-full w-full rounded-[6px]"></div>
-                <button class="bg-yellow-500 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Portes Ouvertes</button>
+                <a href="porte.html">
+                    <button class="bg-yellow-500 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Portes
+                    Ouvertes</button>
+                </a>
                 <H1 class="mt-2">Git & Github</H1>
                 <div class="mt-2">20 mars-Salle B12</div>
             </div>
-            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110">
+            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110 w-full px-2">
                 <div class="h-[140px]"><img src="carriere.png" alt="" class="h-full w-full rounded-[6px]"></div>
-                <button class="bg-purple-700 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Carriere</button>
+                <a href="carriere.html">
+                    <button class="bg-purple-700 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Carriere</button>
                 <H1 class="mt-2">Forum Entreprise</H1>
+                </a>
                 <div class="mt-2">2 Avril-Hall principale</div>
             </div>
-            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110">
+            <div class="bg-white rounded-[12px] p-2 transition duration-500 ease-in-out hover:scale-110 w-full px-2">
                 <div class="h-[140px]"><img src="vie-de-campus.jfif" alt="" class="h-full w-full rounded-[6px]"></div>
-                <button class="bg-blue-900 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Vie de campus</button>
+                <a href="vie-de-campus.html">
+                    <button class="bg-blue-900 rounded-16 text-white h-[25px] px-2 rounded-[8px] mt-2">Vie de
+                    campus</button>
+                </a>
                 <H1 class="mt-2">Demo Day</H1>
                 <div class="mt-2">10 Avril-Amphi B</div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="lg:grid grid-cols-4 px-36 p-4 mt-2 gap-2 text-blue-500 bg-blue-800">
-            <div class="lg : bg-white p-2 rounded-[12px]">
+    <section class="lg:px-20 lg:rounded-[20px] md:px-15 md:rounded-[20px] px-10 rounded-[20px]">
+        <div
+            class="lg:grid lg:grid-cols-4 lg:px-10 lg:p-4 lg:mt-2 lg:gap-2 lg:text-blue-500 lg:bg-blue-900 md:grid md:grid-cols-2 md:px-4 md:p-4 md:mt-2 md:gap-2 md:text-blue-500 md:bg-blue-800 grid grid-cols-1 p-2  mt-2 gap-2 text-blue-900 bg-white rounded-[12px]">
+            <div class="lg : bg-white p-2 rounded-[12px] w-full px-2">
                 <h2 class="lg: font-bold">🐱‍💻IIBS Evens</h2>
                 <p>La plateforme des événements de l'Institut Informatique Business School.</p>
             </div>
@@ -123,7 +173,7 @@
         <div class="ml-[35%]">
             <hr class="text-white w-1/2 text-center ">
         </div>
-        <footer class="text-center bg-blue-800 text-white">@2026 Events.Institut Informatique</footer>
+        <footer class="text-center bg-blue-900 text-white">@2026 Events.Institut Informatique</footer>
     </section>
 </body>
 

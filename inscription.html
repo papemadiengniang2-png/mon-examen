@@ -11,56 +11,69 @@
 
 <body class="bg-blue-900">
     <header>
-        <div class="bg-white h-[30px] w-full text-blue-900 flex px-20">
-            <div class="flex w-[300px] justify-center items-center gap-2">
-                <div class="w-[20px] h-[20px] bg-blue-300 rounded-12">
-                    <img src="logo-IIBS-Bleu.jfif" alt="" class="w-full h-full rounded-12">
+        <div class="lg:fixed lg:top-0 lg:left-0 lg:w-full lg:text-white lg:p-2 lg:flex lg:justify-arround lg:z-50  lg:backdrop-blur md:fixed md:top-0 md:left-0 md:w-full md:text-white md:p-2 md:flex md:justify-center md:z-50  md:backdrop-blur fixed top-0 left-0 w-full text-white p-2 grid grid-cols-1 z-50  backdrop-blur">
+            <div class="lg:flex lg:justify-center lg:px-36 md:flex md:justify-center  flex justify-center gap-2 px-20 items-center">
+                <div class="w-[40px] h-[40px] rounded-[12px] bg-blue-300 rounded-12">
+                    <img src="logo-IIBS-Bleu.jfif" alt="" class="w-full h-full rounded-[12px]">
                 </div>
                 <div class="">IIBS Events</div>
             </div>
-            <div class="flex justify-between ml-[70px]">
-                <ul class="flex gap-12">
-                    <a href="acceuil.html"><li>Accueil</li></a>
-                    <a href="agenda.html"><li>Agenda</li></a>
-                    <a href="actu.html"><li>Actualites</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
+            <div>
+                <ul class="lg:fex lg:justify-arround lg:gap-4 lg:mr-12 lg:w-[1/2] lg:iems-center  md:flex md:justify-arround md:mr-12 md:gap-8 md:items-center  flex justify-arround items-center gap-2 px-10 mr-12 text-center">
+                    <a href="index.html">
+                        <li>Accueil</li>
+                    </a>
+                    <a href="agenda.html">
+                        <li>Agenda</li>
+                    </a>
+                    <a href="actu.html">
+                        <li>Actualites</li>
+                    
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    
+                        
+                    <a href="inscription.html">
+                        <li><button class="lg:bg-blue-300 lg:text-white   lg:p-2 lg:rounded-[8px] md:bg-blue-300 md:text-white   md:px-2 md:rounded-[8px] bg-blue-300 rounded-[8px] text-white px-2">S'inscrire</button></li>
+                    </a>
+                    
                 </ul>
-                <button
-                    class="bg-blue-400 rounded-16 text-white h-[25px] ml-[200px] px-2 rounded-[8px]">S'inscrire</button>
+                
             </div>
         </div>
     </header>
-    <section class="px-36 p-4">
-        <div class="px-4 p-2 bg-blue-100 rounded-[12px]">
+    <section class="lg:px-30 lg:p-4 md:px-20 md:p-4 px-10 p-4 mt-16">
+        <div class="lg:px-4 lg:p-2 lg:bg-blue-100 lg:rounded-[12px] md:px-4 md:p-2 md:bg-blue-100 md:rounded-[12px] px-4 p-2 bg-blue-100 rounded-[12px]">
             <div>
                 <h2 class="text-blue-500 font-bold">INSCRIPTION</h2>
-                <h1 class="text-blue-900 text-[30px] font-bold">Reservez votre place</h1>
-                <div class="flex justify-between">
+                <h1 class="lg:text-blue-900 lg:text-[30px] lg:font-bold md:text-blue-900 md:text-[30px] md:font-bold text-blue-900 text-[30px] font-bold">Reservez votre place</h1>
+                <div class="lg:flex lg:justify-between md:flex md:justify-between flex flex-col">
                     <div>
                         <label for="" class="px-2">Prenom</label><br>
-                        <input type="text" placeholder="Votre prenom" class="bg-white text-blue-800 p-2 rounded-[12px] ">
+                        <input type="text" placeholder="Votre prenom" class="lg:bg-white lg:text-blue-800 lg:p-2 lg:rounded-[12px] md:bg-white md:text-blue-800 md:p-2 md:rounded-[12px] bg-white text-blue-800 p-2 w-full rounded-[12px] ">
                     </div>
                     <div>
                         <label for="">Nom</label><br>
-                        <input type="text" placeholder="Votre nom" class="bg-white text-blue-800 p-2 rounded-[12px] ">
+                        <input type="text" placeholder="Votre nom" class="lg:bg-white lg:text-blue-800 lg:p-2 lg:rounded-[12px] md:bg-white md:text-blue-800 md:p-2 md:rounded-[12px] bg-white text-blue-800 p-2 w-full rounded-[12px]">
                     </div>
 
                 </div><br>
                 <div>
-                    <label for="" class="px-2">Adresse e-mail</label><br>
-                    <input type="email" placeholder="Votre adresse mail" class="bg-white text-blue-800 p-2 rounded-[12px] w-full">
+                    <label for="" class="lg:px-2 md:px-2 px-2">Adresse e-mail</label><br>
+                    <input type="email" placeholder="Votre adresse mail" class="lg:bg-white lg:text-blue-800 lg:p-2 lg:rounded-[12px] lg:w-full md:bg-white md:text-blue-800 md:p-2 md:rounded-[12px] md:w-full bg-white text-blue-800 p-2 rounded-[12px] w-full">
                 </div><br>
                 <div>
-                    <label for="" class="px-2">Telephone</label><br>
-                    <input type="tel" placeholder="Votre numero de telephone" class="bg-white text-blue-800 p-2 rounded-[12px] w-full">
+                    <label for="" class="lg:px-2 md:px-2 px-2">Telephone</label><br>
+                    <input type="tel" placeholder="Votre numero de telephone" class="lg:bg-white lg:text-blue-800 lg:p-2 lg:rounded-[12px] lg:w-full md:bg-white md:text-blue-800 md:p-2 md:rounded-[12px] md:w-full bg-white text-blue-800 p-2 rounded-[12px] w-full">
                 </div><br>
                 <div>
-                    <label for="" class="px-2">Statut</label><br>
-                    <input type="text" placeholder="Votre Statut" class="bg-white text-blue-800 p-2 rounded-[12px] w-full">
+                    <label for="" class="lg:px-2 md:px-2 px-2">Statut</label><br>
+                    <input type="text" placeholder="Votre Statut" class="lg:bg-white lg:text-blue-800 lg:p-2 lg:rounded-[12px] lg:w-full md:bg-white md:text-blue-800 md:p-2 md:rounded-[12px] md:w-full bg-white text-blue-800 p-2 rounded-[12px] w-full">
                 </div><br>
                 <div>
-                    <label for="" class="px-2">Evenement choisi</label><br>
-                    <input type="email" placeholder="Evenement" class="bg-white text-blue-800 p-2 rounded-[12px] w-full">
+                    <label for="" class="lg:px-2 md:px-2 px-2">Evenement choisi</label><br>
+                    <input type="email" placeholder="Evenement" class="lg:bg-white lg:text-blue-800 lg:p-2 lg:rounded-[12px] lg:w-full md:bg-white md:text-blue-800 md:p-2 md:rounded-[12px] md:w-full bg-white text-blue-800 p-2 rounded-[12px] w-full">
                 </div><br>
                 <div >
                     <label for="" class="flex gap-3">
@@ -74,16 +87,17 @@
                     class="bg-blue-900 rounded-16 text-white font-bold p-2 rounded-[8px]">confirmer mon inscription</button>
             </div><br>
             <div class="bg-white  p-4 text-center rounded-[12px]">
-                <div class="bg-green-200 text-green-500 h-[50px] w-[50px] rounded-[50%] text-center ml-[47%] flex justify-center"><i class="fa-solid fa-check"></i></div>
+                <div class="lg:bg-green-200 lg:text-green-500 lg:h-[50px] lg:w-[50px] lg:rounded-[50%] lg:text-center lg:ml-[47%] lg:flex lg:justify-center lg:bg-green-200 md:text-green-500 md:h-[50px] md:w-[50px] md:rounded-[50%] md:text-center md:ml-[47%] md:flex md:justify-center bg-green-200 text-green-500 h-[50px] w-[50px] rounded-[50%] text-center ml-[42%] flex justify-center"><i class="fa-solid fa-check"></i></div>
                 <div class="font-bold text-blue-900">Inscription Confirmée</div>
                 <div>Un e-mail de confirmation vient de vous être envoyé pour la Conférence IA & métiers.</div>
                 <a href="agenda.html"><button class="bg-blue-900 rounded-16 text-white font-bold p-2 rounded-[8px]">Retour a l'agenda</button></a>
             </div>
         </div>
     </section>
-    <section>
-        <div class="lg:grid grid-cols-4 px-36 p-4 mt-2 gap-2 text-blue-500 bg-blue-800">
-            <div class="lg : bg-white p-2 rounded-[12px]">
+    <section class="lg:px-10 lg:rounded-[20px] md:px-10 md:rounded-[20px] px-10 rounded-[20px] bg-blue-900">
+        <div
+            class="lg:grid lg:grid-cols-4 lg:px-10 lg:p-4 lg:mt-2 lg:gap-2 lg:text-blue-500 lg:bg-blue-900 md:grid md:grid-cols-2 md:px-4 md:p-4 md:mt-2 md:gap-2 md:text-blue-500 md:bg-blue-800 grid grid-cols-1 p-2  mt-2 gap-2 text-blue-900 bg-white rounded-[12px]">
+            <div class="lg : bg-white p-2 rounded-[12px] w-full px-2">
                 <h2 class="lg: font-bold">🐱‍💻IIBS Evens</h2>
                 <p>La plateforme des événements de l'Institut Informatique Business School.</p>
             </div>
@@ -111,10 +125,10 @@
                 </p>
             </div>
         </div>
-        <div class="ml-[35%]">
-            <hr class="text-white w-1/2 text-center ">
+        <div class="lg:ml-[35%] md:ml-[35%] ml-[35%]">
+            <hr class="lg:text-white lg:w-1/2 lg:text-center md:text-white md:w-1/2 md:text-center text-white w-1/2 text-center">
         </div>
-        <footer class="text-center bg-blue-800 text-white">@2026 Events.Institut Informatique</footer>
+        <footer class="lg:text-center lg:bg-blue-900 lg:text-white md:text-center md:bg-blue-900 md:text-white text-center bg-blue-900 text-white">@2026 Events.Institut Informatique</footer>
     </section>
 </body>
 

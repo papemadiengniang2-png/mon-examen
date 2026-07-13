@@ -7,20 +7,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Contact & acces</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 
-<body>
+<body class="">
     <header>
-        <div class="bg-white h-[30px] w-full text-blue-900 flex px-20">
-            <div class="flex w-[300px] justify-center items-center gap-2">
-                <div class="w-[20px] h-[20px] bg-blue-300 rounded-12">
-                    <img src="logo-IIBS-Bleu.jfif" alt="" class="w-full h-full rounded-12">
+        <div class="lg:fixed lg:top-0 lg:left-0 lg:w-full lg:text-blue-900 lg:p-2 lg:flex lg:justify-arroundn lg:z-50  lg:backdrop-blur md:fixed md:top-0 md:left-0 md:w-full md:text-blue-900 md:p-2 md:flex md:justify-center md:z-50  md:backdrop-blur fixed top-0 left-0 w-full text-blue-900 p-2 grid grid-cols-1 z-50  backdrop-blur">
+            <div class="lg:flex lg:justify-center lg:px-36 md:flex md:justify-center  flex justify-center gap-2 px-20 items-center">
+                <div class="w-[40px] h-[40px] rounded-[12px] bg-blue-300 rounded-12">
+                    <img src="logo-IIBS-Bleu.jfif" alt="" class="w-full h-full rounded-[12px]">
                 </div>
                 <div class="">IIBS Events</div>
             </div>
-            <div class="flex justify-between ml-[70px]">
-                <ul class="flex gap-12">
-                    <a href="acceuil.html">
+            <div>
+                <ul class="lg:fex lg:justify-arround lg:gap-4 lg:mr-12 lg:w-[1/2] lg:iems-center  md:flex md:justify-arround md:mr-12 md:gap-8 md:items-center  flex justify-arround items-center gap-2 px-10 mr-12 text-center">
+                    <a href="index.html">
                         <li>Accueil</li>
                     </a>
                     <a href="agenda.html">
@@ -28,19 +29,26 @@
                     </a>
                     <a href="actu.html">
                         <li>Actualites</li>
+                    
+                    <a href="contact.html">
+                        <li>Contact</li>
                     </a>
-                    <li>Contact</li>
+                    
+                        
+                    <a href="inscription.html">
+                        <li><button class="lg:bg-blue-300 lg:text-white   lg:p-2 lg:rounded-[8px] md:bg-blue-300 md:text-white   md:px-2 md:rounded-[8px] bg-blue-300 rounded-[8px] text-white px-2">S'inscrire</button></li>
+                    </a>
+                    
                 </ul>
-                <button
-                    class="bg-blue-400 rounded-16 text-white h-[25px] ml-[200px] px-2 rounded-[8px]">S'inscrire</button>
+                
             </div>
         </div>
     </header>
-    <section class="bg-blue-900 p-2  text-blue-900">
-        <div class="bg-blue-200 w-[950px] ml-38 py-2 px-4  rounded-[12px]">
+    <section class="lg:bg-blue-900 lg:p-2 lg:px-24  lg:text-blue-900 lg:mt-15 md:bg-blue-900 md:p-2  md:text-blue-900 md:mt-15 bg-blue-900 p-2  text-blue-900 mt-20">
+        <div class="bg-blue-200 w-full px-4 md:px-10 py-4 rounded-[12px]">
             <h1 class="text-center text-3xl font-bold">Contact & accès</h1>
             <p class="text-center">Une question ? Une envie de nous rendre visite ? Nous sommes à votre écouteContact & accès.</p>
-            <div class="grid grid-cols-2 gap-4 mt-2">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-4 lg:mt-2 md:grid md:grid-cols-2 md:gap-4 md:mt-2 grid grid-cols-1 gap-4 mt-2">
                 <div class="bg-white p-2 rounded-[12px]">
                     <h1></h1>
                     <label for="">Nom Complet</label>
@@ -59,17 +67,18 @@
                         <input type="tel" class="bg-blue-200 w-full p-4 rounded-[6px]" placeholder="+221 33 000 00 00"><br> <br>
                         <input type="" class="bg-blue-200 w-full p-4 rounded-[6px]" placeholder="Lun - Ven · 8h00 - 18h00">
                     </div>
-                    <div class="h-[250px] bg-[url('./campus.jfif')] rounded-[10px] bg-cover bg-center bg-no-repeat ">
+                    <div class="bg-[url('./campus.jfif')] rounded-[10px] bg-cover bg-center bg-no-repeat ">
                         <button
-                    class="bg-white font-bold rounded-16 text-blue-900  w-[200px] ml-[200px] p-2 rounded-[8px] relative mt-[200px] mr-[400px]">Campus IIBS,Dakar</button>
+                     class="lg:bg-white lg:font-bold lg:text-blue-900  lg:p-2 lg:rounded-[8px] lg:relative lg:mt-[200px] lg:mr-[400px] md:bg-white :font-bold md:text-blue-900  md:p-2 md:rounded-[8px] md:relative md:mt-[200px] md:mr-[400px] bg-white font-bold rounded-16 text-blue-900  w-[200px] mx-auto mt-[200px] p-2 rounded-[8px] relative">Campus IIBS,Dakar</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="lg:grid grid-cols-4 px-36 p-4 mt-2 gap-2 text-blue-500 bg-blue-800">
-            <div class="lg : bg-white p-2 rounded-[12px]">
+    <section class="lg:px-20 md:px-10 px-4 bg-blue-900 ">
+        <div
+            class="lg:grid lg:grid-cols-4 lg:p-4 lg:mt-2 lg:gap-2 lg:text-blue-500 lg:bg-blue-900 md:grid md:grid-cols-2 md:p-4 md:mt-2 md:gap-2 md:text-blue-500 md:bg-blue-800 grid grid-cols-1  mt-6 gap-2 text-blue-900 bg-white rounded-[12px]">
+            <div class="lg : bg-white p-2 rounded-[12px] w-full px-2">
                 <h2 class="lg: font-bold">🐱‍💻IIBS Evens</h2>
                 <p>La plateforme des événements de l'Institut Informatique Business School.</p>
             </div>
@@ -97,10 +106,10 @@
                 </p>
             </div>
         </div>
-        <div class="ml-[35%]">
+        <div class="lg:ml-[35%] md:ml-[35%] ml-[35%] ">
             <hr class="text-white w-1/2 text-center ">
         </div>
-        <footer class="text-center bg-blue-800 text-white">@2026 Events.Institut Informatique</footer>
+        <footer class="lg:text-center lg:bg-blue-900 lg:text-white md:text-center md:bg-blue-900 md:text-white text-center bg-blue-900 text-white">@2026 Events.Institut Informatique</footer>
     </section>
 </body>
 
